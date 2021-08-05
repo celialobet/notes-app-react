@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import App from "./App.jsx";
 
-const App = () => (
-  <div>
-    <h1>Hello world!</h1>
-    <p>How are you?</p>
-  </div>
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
 );
-
-ReactDOM.render(<App />, document.getElementById("root"));
